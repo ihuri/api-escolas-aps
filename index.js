@@ -1,4 +1,7 @@
 const customExpress = require('./config/customExpress')
+const PORT = 3000
+const HOST = '0.0.0.0'
 
 const app = customExpress()
-app.listen(3000, () => console.log('Servidor rodando na porta 3000...'))
+
+app.listen(PORT, HOST)
