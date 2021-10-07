@@ -3,6 +3,14 @@
 
 Projeto com a finalidade de varrer o site escolasaps e pegar os dados e transformar em uma api 
 
+### Sites de Referencia
+
+https://www.cloudsavvyit.com/13461/how-to-run-puppeteer-and-headless-chrome-in-a-docker-container/
+https://www.hiroom2.com/2017/08/11/debian-9-chromium-en/
+https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#setting-up-chrome-linux-sandbox
+
+
+
 #### Dependências Debian (e.g. Ubuntu) 64bits
 
 ```bash
@@ -269,4 +277,3 @@ $ docker build -t ihuri/api-escolas-aps .
 # Criar um contêiner
 docker container run --name ihuri/api-escolas-aps -p 47776:3000 -d ihuri/api-escolas-aps:1.0
 ```
-
