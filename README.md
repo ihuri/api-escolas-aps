@@ -259,7 +259,10 @@ pm2 unstartup systemd
 
 # O servidor iniciará na porta:3000
 
-## Dockerfile
+```
+
+## Rodando a aplicação em Docker
+
 
 ```bash
 # Ir para seu diretório home
@@ -271,9 +274,14 @@ git clone https://github.com/ihuri/api-escolas-aps.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd api-escolas-aps
 
+# Para rodar em um conteiner é necessario trocar o navegador para o Google Chrome
+# Adicione o parametro abaixo:
+	browser.launch({executablePath: 'google-chrome-stable'})
+
 # Processando o arquivo Dockerfile
 $ docker build -t ihuri/api-escolas-aps .
 
 # Criar um contêiner
 docker container run --name ihuri/api-escolas-aps -p 47776:3000 -d ihuri/api-escolas-aps:1.0
 ```
+
