@@ -24,7 +24,7 @@ class EscolasAps {
 
             // Realiza o login
             await page.type('[name="usuario"]', 'jackson');
-            await page.type('#senha', 'ApS1609@');
+            await page.type('#senha', '***@');
             await page.click('[type="submit"]');
 
             // Aguardar carregar os cookies
